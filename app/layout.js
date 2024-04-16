@@ -15,6 +15,8 @@ export default function RootLayout({ children }) {
             <body className={inter.className}>
                 <Navbar />
                 {children}
+
+                <div id="portal-root-id" />
             </body>
         </html>
     );

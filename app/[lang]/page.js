@@ -7,8 +7,7 @@ export default async function Home({ params: { lang } }) {
     const photos = await response.json();
     console.log(photos);
     return (
-        <div className="h-screen bg-red-200">
-            {dict.follow}
+        <div>
             <PhotosList photos={photos} />
         </div>
     );
